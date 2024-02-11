@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  z-index: 999;
+  color: white;
+  background: linear-gradient(45deg, #263238, #212121);
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  margin-left: auto;
+  ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    nav {
+      display: flex;
+      gap: 17px;
+      li {
+        font-size: 13px;
+        font-weight: 100;
+        cursor: pointer;
+      }
+    }
+  }
+  p {
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  span {
+    cursor: pointer;
+    margin-right: auto;
+    background: linear-gradient(to top, #7b5519, #aa7938 52%, #d29851);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+  .burger {
+    // display: none;
+    margin-right: 20px;
+  }
+}
+/* CSS for mobile devices */
+@media only screen and (max-width: 768px) {
+  /* Your styles for mobile devices here */
+  .header {
+    img {
+      margin-left: 15px;
+      margin-right: auto;
+    }
+    ul {
+      nav {
+        li {
+          display: none;
+        }
+      }
+    }
+    p {
+      display: none;
+    }
+    span {
+      margin-left: auto;
+      margin-right: 15px;
+      font-size: 10px;
+    }
+    .burger {
+      display: flex;
+      margin-right: 15px;
+    }
+  }
+}
+
+/* CSS for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your styles for mobile devices here */
+  .header {
+    img {
+      margin-left: 15px;
+      margin-right: auto;
+    }
+    ul {
+      nav {
+        gap: 8px;
+
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+
+    span {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}

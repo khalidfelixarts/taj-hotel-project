@@ -1,0 +1,38 @@
+.nav__parent {
+  position: fixed;
+  width: 50%;
+  height: 100dvh;
+  background-color: white;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(90deg, #263238, #212121);
+}
+
+.nav__active {
+  transform: translateX(0) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__parent {
+    width: 100%;
+    right: 0;
+    transform: translateX(100%);
+  }
+  .nav__active {
+    transform: translateX(0) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav__parent {
+    width: 70%;
+    right: 0;
+    transform: translateX(100%);
+  }
+  .nav__active {
+    transform: translateX(0) !important;
+  }
+}

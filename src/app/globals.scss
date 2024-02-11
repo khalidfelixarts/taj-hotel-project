@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: futura3, futura2;
+}
+
+@font-face {
+  font-family: futura1;
+  src: url(../../public/fonts/futura1.woff2);
+}
+
+@font-face {
+  font-family: futura2;
+  src: url(../../public/fonts/futura2.woff2);
+}
+
+@font-face {
+  font-family: futura3;
+  src: url(../../public/fonts/futura3.woff2);
+}

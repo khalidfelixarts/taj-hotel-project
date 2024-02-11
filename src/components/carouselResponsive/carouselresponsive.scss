@@ -1,0 +1,43 @@
+.carousel__parent {
+  background: linear-gradient(90deg, #263238, #212121);
+  padding-top: 75px;
+}
+.carousel__component {
+  //   width: 100%;
+  //   height: 60vh;
+  div {
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel__component {
+    height: 42vw;
+  }
+
+  .carousel__component div {
+    height: 100% !important;
+    width: 100% !important;
+    position: relative;
+  }
+
+  .carousel__component img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .carousel__component {
+    height: 42vw;
+    div {
+      height: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
