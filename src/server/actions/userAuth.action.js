@@ -3,6 +3,7 @@ import { User } from "../db/models/user.schema";
 import db from "../db/setupDB";
 import bcrypt from "bcryptjs";
 import { sendMail } from "../email/nodeMailer";
+import { cookies } from "next/headers";
 
 export async function signUpAction(name, email, password) {
   db();
@@ -57,7 +58,10 @@ export async function signInAction(email, password) {
     if (!isMatch) {
       return JSON.stringify({ error: "Invalid Credentials" });
     }
-
+    ////////////
+    const oneDay = 24 * 60 * 60 * 1000;
+    cookies().set("session", "khalid", { oneDay });
+    ////////////
     return JSON.stringify({ success: "Login Success", user: user });
   } catch (e) {
     return JSON.stringify({ error: e.message });

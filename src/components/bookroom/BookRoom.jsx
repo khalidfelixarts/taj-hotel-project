@@ -3,15 +3,36 @@ import "./booking.scss";
 import { getAllRoomsAction } from "@/server/actions/adminAdd.action";
 import BookingForm from "./BookingForm";
 
-const BookRoom = async () => {
-  let rooms =
-    (await fetch(`${process.env.CLIENT_URL}api/getallrooms`, {
+const Data = async () => {
+  try {
+    let rooms = await fetch(`${process.env.CLIENT_URL}api/getallrooms`, {
       next: { tags: ["rooms"] },
-    })) || (await getAllRoomsAction());
+    });
+    console.log(rooms);
+    rooms = await rooms?.json();
+    return rooms;
+  } catch (e) {
+    console.log(e.message);
+  }
 
-  rooms = (await rooms.json()) || JSON.parse(rooms);
-  rooms = rooms || rooms?.rooms;
+  let rooms = await getAllRoomsAction();
 
+  rooms = JSON.parse(rooms);
+  rooms = rooms?.rooms;
+  return rooms;
+
+  // let rooms =
+  //   (await fetch(`${process.env.CLIENT_URL}api/getallrooms`, {
+  //     next: { tags: ["rooms"] },
+  //   })) || (await getAllRoomsAction());
+
+  // rooms = (await rooms?.json()) || JSON.parse(rooms);
+  // rooms = rooms || rooms?.rooms;
+  // return rooms;
+};
+
+const BookRoom = async () => {
+  const rooms = await Data();
   return (
     <div className="booking">
       <div className="container">

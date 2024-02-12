@@ -5,13 +5,19 @@ import { signInAction, signUpAction } from "@/server/actions/userAuth.action";
 import { useDispatch } from "react-redux";
 import { changeUser } from "@/redux-toolkit/reducers/user.reducer";
 import { toast } from "sonner";
+import { useSelector } from "react-redux";
 
 const Login = () => {
+  const { user } = useSelector((state) => state.user);
   return (
-    <div className="login__window">
-      <SignIn />
-      <SignUp />
-    </div>
+    <>
+      {!user?._id && (
+        <div className="login__window">
+          <SignIn />
+          <SignUp />
+        </div>
+      )}
+    </>
   );
 };
 

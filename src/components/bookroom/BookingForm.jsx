@@ -97,6 +97,8 @@ const BookingForm = ({ children, className, room }) => {
             <div>
               <span>Select Dates: </span>
               <DateRange
+                minDate={new Date()}
+                fixedHeight
                 editableDateInputs={true}
                 onChange={(item) => setDateRange([item.selection])}
                 moveRangeOnFirstSelection={false}

@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <ReduxProvider>
-          <Toaster richColors position="top-right" />
+          <Toaster richColors position="bottom-right" />
           {children}
         </ReduxProvider>
       </body>
