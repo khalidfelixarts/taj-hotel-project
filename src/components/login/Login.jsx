@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import { changeUser } from "@/redux-toolkit/reducers/user.reducer";
 import { toast } from "sonner";
 import { useSelector } from "react-redux";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 
 const Login = () => {
   const { user } = useSelector((state) => state.user);
@@ -21,7 +23,7 @@ const Login = () => {
   );
 };
 
-function SignIn() {
+export function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
@@ -64,9 +66,12 @@ function SignIn() {
         <p className="page-link">
           <span className="page-link-label">Forgot Password?</span>
         </p>
-        <button type="submit" className="form-btn">
+        {/* <button type="submit" className="form-btn">
           Log in
-        </button>
+        </button> */}
+        <Button type="submit" className="form-btn" variant="contained">
+          Log in
+        </Button>
       </form>
       <p className="sign-up-label">
         Don&apos;t have an account?
@@ -76,7 +81,7 @@ function SignIn() {
   );
 }
 
-function SignUp() {
+export function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -97,7 +102,7 @@ function SignUp() {
     <div className="form-container">
       <p className="title">Welcome</p>
       <form onSubmit={handleSignUp} className="form">
-        <input
+        {/* <input
           value={name}
           onChange={(e) => {
             setName(e.target.value);
@@ -106,8 +111,26 @@ function SignUp() {
           className="input"
           placeholder="Name"
           required
+        /> */}
+        <TextField
+          label="Name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+          type="text"
+          // className="input"
+          variant="filled"
+          required
+          sx={{
+            background: "#fff",
+            borderRadius: "5px 5px 0 0",
+            scale: "0.9",
+            color: "red",
+          }}
         />
-        <input
+
+        {/* <input
           value={email}
           onChange={(e) => {
             setEmail(e.target.value);
@@ -116,8 +139,22 @@ function SignUp() {
           className="input"
           placeholder="Email"
           required
+        /> */}
+
+        <TextField
+          label="Email"
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          type="email"
+          // className="input"
+          variant="filled"
+          required
+          sx={{ background: "#fff", borderRadius: "5px 5px 0 0", scale: "0.9" }}
         />
-        <input
+
+        {/* <input
           value={password}
           onChange={(e) => {
             setPassword(e.target.value);
@@ -126,13 +163,30 @@ function SignUp() {
           className="input"
           placeholder="Password"
           required
+        /> */}
+        <TextField
+          label="Password"
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+          type="password"
+          // className="input"
+          variant="filled"
+          required
+          sx={{ background: "#fff", borderRadius: "5px 5px 0 0", scale: "0.9" }}
         />
+
         <p className="page-link">
           <span className="page-link-label">Forgot Password?</span>
         </p>
-        <button type="submit" className="form-btn">
+        {/* <button type="submit" className="form-btn">
           Sign up
-        </button>
+        </button> */}
+
+        <Button type="submit" className="form-btn" variant="contained">
+          Sign up
+        </Button>
       </form>
       <p className="sign-up-label">
         Have an account?

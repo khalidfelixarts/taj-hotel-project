@@ -11,6 +11,9 @@
 }
 
 .carousel__item__screen {
+  h1 {
+    padding-bottom: 10px;
+  }
   color: white;
   display: flex;
   flex-direction: column;
@@ -42,6 +45,9 @@
   }
 
   .carousel__item__screen {
+    h1 {
+      padding-bottom: 4px;
+    }
     font-size: 8px;
     padding-bottom: 4vh;
   }

@@ -4,6 +4,7 @@ import "./header.scss";
 import Burger from "./Burger/Burger";
 import Nav from "./Nav/Nav";
 import { useState } from "react";
+import Button from "@mui/material/Button";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
@@ -31,7 +32,11 @@ const Header = () => {
           </nav>
         </ul>
         <p>SIGN IN</p>
-        <span>BOOK A STAY</span>
+
+        <Button className="book__button" variant="contained">
+          BOOK A STAY
+        </Button>
+        {/* <span className="book__button">BOOK A STAY</span> */}
         <Burger
           className={"burger"}
           navState={navState}

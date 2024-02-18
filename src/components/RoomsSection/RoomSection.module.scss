@@ -1,0 +1,30 @@
+.rooms__section__parent {
+  // background-color: #e0e0e0;
+  background: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+  min-height: 80vh;
+
+  h1 {
+    color: #333333;
+    padding-top: 50px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .rooms__section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules specific to tablets */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  /* CSS rules specific to mobile devices */
+}

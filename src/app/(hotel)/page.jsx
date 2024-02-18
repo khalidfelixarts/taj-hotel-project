@@ -1,17 +1,18 @@
-import CurrentUser from "@/components/CurrentUser/CurrentUser";
-import UserBookings from "@/components/UserBookings/UserBookings";
-import BookRoom from "@/components/bookroom/BookRoom";
-import Carousel from "@/components/carousel/Carousel";
+// import CurrentUser from "@/components/CurrentUser/CurrentUser";
+// import UserBookings from "@/components/UserBookings/UserBookings";
+// import BookRoom from "@/components/bookroom/BookRoom";
+// import Carousel from "@/components/carousel/Carousel";
+// import Login from "@/components/login/Login";
 import CarouselResponsive from "@/components/carouselResponsive/CarouselResponsive";
-import Login from "@/components/login/Login";
 import React from "react";
+import RoomsSection from "@/components/RoomsSection/RoomsSection";
 
 const Home = () => {
   return (
-    <div style={{ width: "100%" }}>
-      {/* <Carousel /> */}
+    <main style={{ width: "100%" }}>
       <CarouselResponsive />
-      <div
+      {/* <Carousel /> */}
+      {/* <div
         style={{
           background: "#000",
           width: "100%",
@@ -19,15 +20,17 @@ const Home = () => {
           color: "#fff",
         }}
       >
-        <Login />
+        <Login /> */}
 
-        <CurrentUser />
+      {/* <CurrentUser /> */}
 
-        <BookRoom />
+      {/* <BookRoom /> */}
 
-        <UserBookings />
-      </div>
-    </div>
+      {/* <UserBookings /> */}
+      {/* </div> */}
+
+      <RoomsSection />
+    </main>
   );
 };
 

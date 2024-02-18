@@ -1,0 +1,16 @@
+.rating {
+  transform: scale(2);
+
+  .gold {
+    &::before {
+      content: "★";
+      color: #e58e09;
+    }
+  }
+  .dull {
+    &::before {
+      content: "★";
+      color: #6d6d6d;
+    }
+  }
+}
