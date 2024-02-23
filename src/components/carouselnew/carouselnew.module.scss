@@ -1,0 +1,17 @@
+.react__slick__parent {
+  width: 100%;
+  // border: 1px solid red;
+  .slider__card {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .slider__content {
+      position: absolute;
+    }
+  }
+}

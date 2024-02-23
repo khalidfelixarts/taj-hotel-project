@@ -1,4 +1,15 @@
-import TempImg from "../../public/images/room.JPG";
+// import TempImg from "../../public/images/room.JPG";
+
+import CAROUSEL1 from "@/assets/carousel/carousel1.jpg";
+import CAROUSEL2 from "@/assets/carousel/carousel2.jpg";
+import CAROUSEL3 from "@/assets/carousel/carousel3.jpg";
+import CAROUSEL4 from "@/assets/carousel/carousel4.jpg";
+import CAROUSEL5 from "@/assets/carousel/carousel5.jpg";
+import CAROUSEL6 from "@/assets/carousel/carousel6.jpg";
+
+import ROOM1 from "@/assets/room/room1.jpg";
+import ROOM2 from "@/assets/room/room2.jpg";
+import ROOM3 from "@/assets/room/room3.jpg";
 
 export class Constants {
   static carouselData = [
@@ -15,7 +26,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/1.jpg",
+      src: CAROUSEL1,
     },
     {
       key: "slide2",
@@ -30,7 +41,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/2.jpg",
+      src: CAROUSEL2,
     },
     {
       key: "slide3",
@@ -45,7 +56,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/3.jpg",
+      src: CAROUSEL3,
     },
     {
       key: "slide4",
@@ -60,7 +71,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/4.jpg",
+      src: CAROUSEL4,
     },
     {
       key: "slide5",
@@ -75,7 +86,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/5.jpg",
+      src: CAROUSEL5,
     },
     {
       key: "slide6",
@@ -90,28 +101,13 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/images/6.jpg",
-    },
-    {
-      key: "slide7",
-      title: "Deepali Hotel",
-      description: `
-      Hotel Deepali is a heritage property promising world-class
-      services and exceptional hospitality in Madhya Pradesh’s Sagar.
-      The hotel offers complimentary WiFi, valet parking, daily
-      housekeeping, 24-hour room service, and round the clock front desk
-      for the convenience of guests. Doorman to greet the guests and
-      security at the entrance make the stay safe for guests There is a
-      spacious conference room where business travellers can conduct
-      meetings smoothly
-      `,
-      src: "/images/7.jpg",
+      src: CAROUSEL6,
     },
   ];
 
   static Rooms = [
     {
-      img: TempImg,
+      img: ROOM1,
       type: "Standard",
       rating: 4,
       description:
@@ -120,7 +116,7 @@ export class Constants {
       link: "/book/standard",
     },
     {
-      img: TempImg,
+      img: ROOM2,
       type: "Duplex",
       rating: 5,
       description:
@@ -129,7 +125,7 @@ export class Constants {
       link: "/book/duplex",
     },
     {
-      img: TempImg,
+      img: ROOM3,
       type: "Suite",
       rating: 5,
       description:

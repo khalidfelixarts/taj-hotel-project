@@ -159,7 +159,9 @@ const Carousel = () => {
       <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
       {data.map((item, idx) => {
         return (
-          <img
+          <Image
+            // width={1280}
+            // height={720}
             src={item.src}
             alt={item.alt}
             key={idx}

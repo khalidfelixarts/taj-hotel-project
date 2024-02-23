@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import module from "./RoomCard.module.scss";
-import TempImg from "../../../public/images/room.JPG";
+// import TempImg from "../../../public/images/room.JPG";
 import Rating from "../Ratings/Rating";
 import Link from "next/link";
 
+import ROOM1 from "@/assets/room/room1.jpg";
+import ROOM2 from "@/assets/room/room2.jpg";
+import ROOM3 from "@/assets/room/room3.jpg";
+
 function RoomCard({ room, key }) {
   return (
-    <Link href={`${room.link}`}>
-      <div key={key} className={module.card}>
+    <Link key={key} href={`${room.link}`}>
+      <div className={module.card}>
         <div className={module.content}>
           <div className={module.back}>
             <FrontContent room={room} />
@@ -26,7 +30,12 @@ function FrontContent({ room }) {
   return (
     <div className={module.back__content}>
       <div className={module.room__img}>
-        <Image src={TempImg} width={1280} height={720} />
+        <Image
+          src={room.img}
+          alt={room.description}
+          width={1280}
+          height={720}
+        />
       </div>
       <h2>{room.type}</h2>
 
@@ -46,7 +55,12 @@ function HoverContent({ room }) {
   return (
     <div className={module.front__content}>
       <div className={module.room__img}>
-        <Image src={TempImg} width={1280} height={720} />
+        <Image
+          src={room.img}
+          alt={room.description}
+          width={1280}
+          height={720}
+        />
       </div>
       <h2>{room.type}</h2>
 

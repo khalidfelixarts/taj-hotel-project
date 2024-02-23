@@ -1,0 +1,44 @@
+.custom__button__parent {
+  transform: scale(1.2);
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    position: relative;
+    padding: 10px 30px;
+    border: solid 1.5px #333333;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #333333;
+    font-size: 18px;
+    overflow: hidden;
+  }
+
+  h4::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: -100%;
+    background-color: #333333;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+  }
+
+  h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  h4:hover span {
+    color: white;
+  }
+
+  span {
+    color: #333333;
+    z-index: 99;
+    position: relative;
+  }
+}

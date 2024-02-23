@@ -6,11 +6,15 @@
 import CarouselResponsive from "@/components/carouselResponsive/CarouselResponsive";
 import React from "react";
 import RoomsSection from "@/components/RoomsSection/RoomsSection";
+import CarouselNew from "@/components/carouselnew/CarouselNew";
+import ImageScroll from "@/components/ImageParallaxScroll/ImageScroll";
 
 const Home = () => {
   return (
     <main style={{ width: "100%" }}>
-      <CarouselResponsive />
+      {/* <CarouselResponsive /> */}
+      <CarouselNew />
+
       {/* <Carousel /> */}
       {/* <div
         style={{
@@ -30,6 +34,8 @@ const Home = () => {
       {/* </div> */}
 
       <RoomsSection />
+
+      <ImageScroll />
     </main>
   );
 };
