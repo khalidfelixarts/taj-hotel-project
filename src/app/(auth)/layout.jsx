@@ -6,7 +6,7 @@ const layout = ({ children }) => {
     <div>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer color={"#ffe6c9"} />
     </div>
   );
 };
