@@ -13,21 +13,23 @@ const Page = ({ params }) => {
   });
 
   return (
-    <div className={module.room__page__parent}>
-      <div className={module.booking__window}>
-        <LeftPart params={params} />
-        <RightPart params={params} />
-      </div>
+    <>
+      <div className={module.room__page__parent}>
+        <div className={module.booking__window}>
+          <LeftPart params={params} />
+          <RightPart params={params} />
+        </div>
 
-      <div className={module.image__parent}>
-        <Image
-          src={details.img}
-          alt={details.description}
-          width={1280}
-          height={720}
-        />
+        <div className={module.image__parent}>
+          <Image
+            src={details.img}
+            alt={details.description}
+            width={1280}
+            height={720}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

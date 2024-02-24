@@ -4,7 +4,6 @@ import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
 import module from "./imagescroll.module.scss";
-import Link from "next/link";
 
 import img1 from "../../../public/parallax/p1.JPG";
 import img2 from "../../../public/parallax/p2.jpg";
@@ -16,7 +15,7 @@ import img7 from "../../../public/parallax/p7.jpg";
 import img8 from "../../../public/parallax/p8.jpg";
 import img9 from "../../../public/parallax/p9.jpg";
 import img10 from "../../../public/parallax/p10.jpg";
-import img11 from "../../../public/parallax/p11.jpg";
+import img11 from "../../../public/parallax/p11.JPG";
 import img12 from "../../../public/parallax/p12.jpg";
 import CustomButton from "../customButton/CustomButton";
 
