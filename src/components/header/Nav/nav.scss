@@ -1,6 +1,7 @@
 .nav__parent {
+  padding-top: 100px;
   position: fixed;
-  width: 50%;
+  width: 30%;
   height: 100dvh;
   background-color: white;
   top: 0;
@@ -8,7 +9,90 @@
   z-index: 998;
   transform: translateX(100%);
   transition: 0.3s ease-in-out;
-  background: linear-gradient(90deg, #263238, #212121);
+  // background: linear-gradient(90deg, #263238, #212121);
+  background: linear-gradient(90deg, rgb(22, 29, 32), #212121ce);
+
+  ul {
+    width: 70%;
+    li {
+      height: 70px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      a {
+        margin-left: 40px;
+        width: 100%;
+      }
+    }
+  }
+
+  li:hover {
+    // background-color: #bcbec0;
+
+    a {
+      transition: 400ms;
+      color: black;
+    }
+  }
+
+  .menu__item {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  .menu__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    // background: #bcbec0;
+    background: #dd9946;
+    z-index: -1;
+    transition: 0.3s ease all;
+    transform: scale(0, 1);
+
+    transform-origin: top left;
+    transition: transform 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .menu__item:hover::after {
+    transform: scale(1, 1);
+    transform-origin: top left;
+  }
+
+  ///////////////////
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .menu {
+    list-style-type: none;
+  }
+
+  .menu__link {
+    color: white;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 1.5rem;
+    // line-height: 15vmin;
+    transition: all 0.25s ease-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: black;
+    }
+  }
 }
 
 .nav__active {
@@ -28,7 +112,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .nav__parent {
-    width: 70%;
+    width: 50%;
     right: 0;
     transform: translateX(100%);
   }
