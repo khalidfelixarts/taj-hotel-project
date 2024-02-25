@@ -1,7 +1,6 @@
 import React from "react";
 import module from "./register.module.scss";
 import Image from "next/image";
-// import COVER from "@/assets/parallax/p12.jpg";
 import { SignIn } from "@/components/login/Login";
 
 const page = () => {
@@ -20,7 +19,7 @@ function LeftPart() {
 
   return (
     <div className={module.left__part}>
-      <Image src={COVER} />
+      <Image src={COVER} fill />
     </div>
   );
 }

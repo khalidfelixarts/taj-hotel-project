@@ -1,13 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import module from "./RoomCard.module.scss";
-// import TempImg from "../../../public/images/room.JPG";
 import Rating from "../Ratings/Rating";
 import Link from "next/link";
-
-import ROOM1 from "@/assets/room/room1.jpg";
-import ROOM2 from "@/assets/room/room2.jpg";
-import ROOM3 from "@/assets/room/room3.jpg";
 
 function RoomCard({ room, key }) {
   return (
@@ -31,7 +26,7 @@ function FrontContent({ room }) {
     <div className={module.back__content}>
       <div className={module.room__img}>
         <Image
-          src={room.img}
+          src={`${room.img}`}
           alt={room.description}
           width={1280}
           height={720}

@@ -1,16 +1,3 @@
-// import TempImg from "../../public/images/room.JPG";
-
-import CAROUSEL1 from "../assets/carousel/carousel1.JPG";
-import CAROUSEL2 from "../assets/carousel/carousel2.jpg";
-import CAROUSEL3 from "../assets/carousel/carousel3.jpg";
-import CAROUSEL4 from "../assets/carousel/carousel4.jpg";
-import CAROUSEL5 from "../assets/carousel/carousel5.jpg";
-import CAROUSEL6 from "../assets/carousel/carousel6.jpg";
-
-import ROOM1 from "../assets/room/room1.jpg";
-import ROOM2 from "../assets/room/room2.jpg";
-import ROOM3 from "../assets/room/room3.jpg";
-
 function createImgUrl(pid) {
   return `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/${pid}.jpg`;
 }
@@ -30,7 +17,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL1,
+      src: "/assets/carousel/carousel1.JPG",
     },
     {
       key: "slide2",
@@ -45,7 +32,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL2,
+      src: "/assets/carousel/carousel2.jpg",
     },
     {
       key: "slide3",
@@ -60,7 +47,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL3,
+      src: "/assets/carousel/carousel3.jpg",
     },
     {
       key: "slide4",
@@ -75,7 +62,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL4,
+      src: "/assets/carousel/carousel4.jpg",
     },
     {
       key: "slide5",
@@ -90,7 +77,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL5,
+      src: "/assets/carousel/carousel5.jpg",
     },
     {
       key: "slide6",
@@ -105,13 +92,13 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: CAROUSEL6,
+      src: "/assets/carousel/carousel6.jpg",
     },
   ];
 
   static Rooms = [
     {
-      img: ROOM1,
+      img: "/assets/room/room1.jpg",
       type: "Standard",
       rating: 4,
       description:
@@ -120,7 +107,7 @@ export class Constants {
       link: "/book/standard",
     },
     {
-      img: ROOM2,
+      img: "/assets/room/room2.jpg",
       type: "Duplex",
       rating: 5,
       description:
@@ -129,7 +116,7 @@ export class Constants {
       link: "/book/duplex",
     },
     {
-      img: ROOM3,
+      img: "/assets/room/room3.jpg",
       type: "Suite",
       rating: 5,
       description:

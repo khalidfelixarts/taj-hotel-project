@@ -1,6 +1,5 @@
 import React from "react";
 import module from "./room.module.scss";
-import COVER from "@/assets/room/room1.jpg";
 import Image from "next/image";
 import { Constants } from "@/utils/constants";
 

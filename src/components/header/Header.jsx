@@ -5,7 +5,6 @@ import Burger from "./Burger/Burger";
 import Nav from "./Nav/Nav";
 import { useState } from "react";
 import Button from "@mui/material/Button";
-import LOGO from "@/assets/logo.png";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
@@ -13,7 +12,12 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Image src={LOGO} width={85} height={50} style={{ padding: "1px" }} />
+        <Image
+          src="/logo.png"
+          width={85}
+          height={50}
+          style={{ padding: "1px" }}
+        />
 
         <ul>
           <nav>
