@@ -1,7 +1,7 @@
 import React from "react";
 import module from "./register.module.scss";
 import Image from "next/image";
-import COVER from "@/assets/parallax/p12.jpg";
+// import COVER from "@/assets/parallax/p12.jpg";
 import { SignIn } from "@/components/login/Login";
 
 const page = () => {
@@ -16,6 +16,8 @@ const page = () => {
 };
 
 function LeftPart() {
+  const COVER = `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/Hotel/parallax/i8v5s4b0kbguv4byvxy1.jpg`;
+
   return (
     <div className={module.left__part}>
       <Image src={COVER} />
