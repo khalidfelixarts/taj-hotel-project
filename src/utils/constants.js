@@ -17,7 +17,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel1.JPG",
+      src: createImgUrl("Hotel/carousel/vvlppdwmbxmrzq7vfmxv"),
     },
     {
       key: "slide2",
@@ -32,7 +32,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel2.jpg",
+      src: createImgUrl("Hotel/carousel/te4oh8kavkuipiwhgjjp"),
     },
     {
       key: "slide3",
@@ -47,7 +47,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel3.jpg",
+      src: createImgUrl("Hotel/carousel/bggeuaprajugof9wzgd6"),
     },
     {
       key: "slide4",
@@ -62,7 +62,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel4.jpg",
+      src: createImgUrl("Hotel/carousel/cgyb1yz19fnrtc4djxqd"),
     },
     {
       key: "slide5",
@@ -77,7 +77,7 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel5.jpg",
+      src: createImgUrl("Hotel/carousel/iz41zm0uirssz1tsujte"),
     },
     {
       key: "slide6",
@@ -92,13 +92,13 @@ export class Constants {
       spacious conference room where business travellers can conduct
       meetings smoothly
       `,
-      src: "/assets/carousel/carousel6.jpg",
+      src: createImgUrl("Hotel/carousel/asas5rtce1tehkqqzjck"),
     },
   ];
 
   static Rooms = [
     {
-      img: "/assets/room/room1.jpg",
+      img: createImgUrl("Hotel/rooms/cehqo6zlvmxe6yldppq1"),
       type: "Standard",
       rating: 4,
       description:
@@ -107,7 +107,7 @@ export class Constants {
       link: "/book/standard",
     },
     {
-      img: "/assets/room/room2.jpg",
+      img: createImgUrl("Hotel/rooms/pymnhderxclteyk54ulc"),
       type: "Duplex",
       rating: 5,
       description:
@@ -116,7 +116,7 @@ export class Constants {
       link: "/book/duplex",
     },
     {
-      img: "/assets/room/room3.jpg",
+      img: createImgUrl("Hotel/rooms/rzb70d5btfvcxk0zlndn"),
       type: "Suite",
       rating: 5,
       description:

@@ -59,7 +59,12 @@ const RightPart = ({ params }) => {
   });
   return (
     <div className={module.right__part}>
-      <Image src={details.img} alt={details.description} />
+      <Image
+        src={details.img}
+        alt={details.description}
+        width={1280}
+        height={720}
+      />
     </div>
   );
 };

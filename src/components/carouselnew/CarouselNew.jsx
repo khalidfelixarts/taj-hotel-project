@@ -19,13 +19,10 @@ const CarouselNew = () => {
   return (
     <div className={module.react__slick__parent}>
       <Slider {...settings}>
-        {Constants.carouselData.map((c) => (
-          <>
-            <div className={module.slider__card}>
-              <Image src={c.src} width={1920} height={1080} />
-            </div>
-            {/* <div className={module.slider__content}>Deepali</div> */}
-          </>
+        {Constants.carouselData.map((c, index) => (
+          <div key={index} className={module.slider__card}>
+            <Image src={c.src} width={1920} height={1080} />
+          </div>
         ))}
       </Slider>
     </div>

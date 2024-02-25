@@ -5,77 +5,48 @@ import Link from "next/link";
 const Nav = ({ isActive }) => {
   return (
     <div className={`nav__parent ${isActive && "nav__active"}`}>
-      {/*  */}
-
-      <ul id="menubar" class="menu" role="menubar" aria-orientation="vertical">
-        <li class="menu__item" role="none">
-          <Link class="menu__link" href="/" role="menuitem" tabindex="-1">
+      <ul className="menu">
+        <li className="menu__item">
+          <Link className="menu__link" href="/">
             HOME
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link
-            class="menu__link"
-            href="/portfolio"
-            role="menuitem"
-            tabindex="-1"
-          >
+        <li className="menu__item">
+          <Link className="menu__link" href="/portfolio">
             OUR HOTELS
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link class="menu__link" href="awards" role="menuitem" tabindex="-1">
+        <li className="menu__item">
+          <Link className="menu__link" href="awards">
             DINING
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link class="menu__link" href="/team" role="menuitem" tabindex="-1">
+        <li className="menu__item">
+          <Link className="menu__link" href="/team">
             ROOMS
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link
-            class="menu__link"
-            href="/milestones"
-            role="menuitem"
-            tabindex="-1"
-          >
+        <li className="menu__item">
+          <Link className="menu__link" href="/milestones">
             HOLIDAYS
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link
-            class="menu__link"
-            href="/clients"
-            role="menuitem"
-            tabindex="-1"
-          >
+        <li className="menu__item">
+          <Link className="menu__link" href="/clients">
             BOOKINGS
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link
-            class="menu__link"
-            href="/contact"
-            role="menuitem"
-            tabindex="-1"
-          >
+        <li className="menu__item">
+          <Link className="menu__link" href="/contact">
             SIGN IN
           </Link>
         </li>
-        <li class="menu__item" role="none">
-          <Link
-            class="menu__link"
-            href="/contact"
-            role="menuitem"
-            tabindex="-1"
-          >
+        <li className="menu__item">
+          <Link className="menu__link" href="/contact">
             CONTACT US
           </Link>
         </li>
       </ul>
-
-      {/*  */}
     </div>
   );
 };

@@ -4,9 +4,9 @@ import module from "./RoomCard.module.scss";
 import Rating from "../Ratings/Rating";
 import Link from "next/link";
 
-function RoomCard({ room, key }) {
+function RoomCard({ room, index }) {
   return (
-    <Link key={key} href={`${room.link}`}>
+    <Link href={`${room.link}`}>
       <div className={module.card}>
         <div className={module.content}>
           <div className={module.back}>

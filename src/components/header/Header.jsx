@@ -13,7 +13,7 @@ const Header = () => {
     <>
       <header className="header">
         <Image
-          src="/logo.png"
+          src="https://res.cloudinary.com/de0llaul4/image/upload/v1708866033/Hotel/eloeu9luhnuxlffmoq0i.png"
           width={85}
           height={50}
           style={{ padding: "1px" }}

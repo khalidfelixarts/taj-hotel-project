@@ -10,7 +10,9 @@ function RoomsSection() {
         <h1>BOOK A STAY</h1>
         <div className={module.rooms__section}>
           {Constants.Rooms.map((room, index) => (
-            <RoomCard key={index} room={room} />
+            <div key={index}>
+              <RoomCard index={index} room={room} />
+            </div>
           ))}
         </div>
       </div>
