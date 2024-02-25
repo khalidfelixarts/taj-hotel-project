@@ -20,22 +20,35 @@
   margin-left: auto;
   ul {
     list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
+    // border: 1px solid red;
+    margin-right: auto;
+    // margin-left: auto;
+
     nav {
+      margin-left: 20px;
+      margin-right: 20px;
+      // border: 1px solid red;
       display: flex;
       gap: 17px;
-      li {
-        font-size: 13px;
-        font-weight: 100;
-        cursor: pointer;
+      a {
+        text-decoration: none;
+        color: inherit;
+        li {
+          font-size: 13px;
+          font-weight: 100;
+          cursor: pointer;
+        }
       }
     }
   }
-  p {
-    margin-left: auto;
-    cursor: pointer;
-    margin-right: 15px;
+  a {
+    text-decoration: none;
+    color: inherit;
+    p {
+      margin-left: auto;
+      cursor: pointer;
+      margin-right: 15px;
+    }
   }
   .book__button {
     cursor: pointer;
@@ -69,13 +82,17 @@
     }
     ul {
       nav {
-        li {
-          display: none;
+        a {
+          li {
+            display: none;
+          }
         }
       }
     }
-    p {
-      display: none;
+    a {
+      p {
+        display: none;
+      }
     }
     .book__button {
       margin-left: auto;
@@ -101,8 +118,10 @@
       nav {
         gap: 8px;
 
-        li {
-          font-size: 10px;
+        a {
+          li {
+            font-size: 10px;
+          }
         }
       }
     }

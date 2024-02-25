@@ -6,7 +6,7 @@ import { Constants } from "@/utils/constants";
 function RoomsSection() {
   return (
     <>
-      <div className={module.rooms__section__parent}>
+      <div id="rooms" className={module.rooms__section__parent}>
         <h1>BOOK A STAY</h1>
         <div className={module.rooms__section}>
           {Constants.Rooms.map((room, index) => (

@@ -5,14 +5,18 @@ import Burger from "./Burger/Burger";
 import Nav from "./Nav/Nav";
 import { useState } from "react";
 import Button from "@mui/material/Button";
+import Link from "next/Link";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
 
+  const router = useRouter();
   return (
     <>
       <header className="header">
         <Image
+          onClick={() => router.push("/")}
           src="https://res.cloudinary.com/de0llaul4/image/upload/v1708866033/Hotel/eloeu9luhnuxlffmoq0i.png"
           width={85}
           height={50}
@@ -21,20 +25,34 @@ const Header = () => {
 
         <ul>
           <nav>
-            <li>OUR HOTELS</li>
-            <li>DINING</li>
-            <li>WEDDINGS</li>
-            {/* <li>GIFT CARDS</li> */}
-            <li>TAJ HOLIDAYS</li>
-            {/* <li>MEMBERSHIP PROGRAMS</li> */}
-            <li>MANAGE BOOKING</li>
-            {/* <li>SIGN IN</li> */}
+            <Link href="/gallery">
+              <li>GALLERY</li>
+            </Link>
+
+            <Link href="/gallery#holidays">
+              <li>HOLIDAYS</li>
+            </Link>
+
+            <Link href="/gallery#dining">
+              <li>DINING</li>
+            </Link>
+
+            <Link href="/book">
+              <li>ROOMS</li>
+            </Link>
+
+            <Link href="/bookings">
+              <li>BOOKINGS</li>
+            </Link>
           </nav>
         </ul>
-        <p>SIGN IN</p>
+
+        <Link href="/register">
+          <p>SIGN UP</p>
+        </Link>
 
         <Button className="book__button" variant="contained">
-          BOOK A STAY
+          <Link href="#rooms">BOOK A STAY</Link>
         </Button>
         {/* <span className="book__button">BOOK A STAY</span> */}
         <Burger
