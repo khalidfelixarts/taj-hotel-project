@@ -41,8 +41,8 @@ const Nav = ({ isActive }) => {
   return (
     <div className={`nav__parent ${isActive && "nav__active"}`}>
       <ul className="menu">
-        {navItems?.map((i) => (
-          <li className="menu__item">
+        {navItems?.map((i, index) => (
+          <li key={index} className="menu__item">
             <Link className="menu__link" href={`${i.link}`}>
               {i.name}
             </Link>
