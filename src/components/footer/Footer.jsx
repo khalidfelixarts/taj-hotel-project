@@ -3,7 +3,6 @@ import module from "./footer.module.scss";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import CustomButton from "../customButton/CustomButton";
 
 const Footer = ({ color }) => {
   return (
