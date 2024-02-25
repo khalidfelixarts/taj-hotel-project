@@ -1,15 +1,15 @@
 // import TempImg from "../../public/images/room.JPG";
 
-import CAROUSEL1 from "@/assets/carousel/carousel1.jpg";
-import CAROUSEL2 from "@/assets/carousel/carousel2.jpg";
-import CAROUSEL3 from "@/assets/carousel/carousel3.jpg";
-import CAROUSEL4 from "@/assets/carousel/carousel4.jpg";
-import CAROUSEL5 from "@/assets/carousel/carousel5.jpg";
-import CAROUSEL6 from "@/assets/carousel/carousel6.jpg";
+import CAROUSEL1 from "../assets/carousel/carousel1.JPG";
+import CAROUSEL2 from "../assets/carousel/carousel2.jpg";
+import CAROUSEL3 from "../assets/carousel/carousel3.jpg";
+import CAROUSEL4 from "../assets/carousel/carousel4.jpg";
+import CAROUSEL5 from "../assets/carousel/carousel5.jpg";
+import CAROUSEL6 from "../assets/carousel/carousel6.jpg";
 
-import ROOM1 from "@/assets/room/room1.jpg";
-import ROOM2 from "@/assets/room/room2.jpg";
-import ROOM3 from "@/assets/room/room3.jpg";
+import ROOM1 from "../assets/room/room1.jpg";
+import ROOM2 from "../assets/room/room2.jpg";
+import ROOM3 from "../assets/room/room3.jpg";
 
 function createImgUrl(pid) {
   return `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/${pid}.jpg`;
