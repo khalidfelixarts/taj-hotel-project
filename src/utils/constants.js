@@ -11,6 +11,10 @@ import ROOM1 from "@/assets/room/room1.jpg";
 import ROOM2 from "@/assets/room/room2.jpg";
 import ROOM3 from "@/assets/room/room3.jpg";
 
+function createImgUrl(pid) {
+  return `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/${pid}.jpg`;
+}
+
 export class Constants {
   static carouselData = [
     {
@@ -133,5 +137,20 @@ export class Constants {
       price: "1500",
       link: "/book/suite",
     },
+  ];
+
+  static ParallaxImgURL = [
+    createImgUrl("Hotel/parallax/xrbb9ttwthiaqoit2rik"),
+    createImgUrl("Hotel/parallax/de2grlpoawmolo6klxse"),
+    createImgUrl("Hotel/parallax/zdeurpkvinvp5omnnoka"),
+    createImgUrl("Hotel/parallax/stfcvqvaocqefizfal6y"),
+    createImgUrl("Hotel/parallax/msytomzjspizcxuxrogl"),
+    createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+    createImgUrl("Hotel/parallax/egyppnrlghuo0zt17qm0"),
+    createImgUrl("Hotel/parallax/upwnssaaks3drqunjqbv"),
+    createImgUrl("Hotel/parallax/ejgbhldp4bi8stogm608"),
+    createImgUrl("Hotel/parallax/euxqizxd0k8lyqeswk3g"),
+    createImgUrl("Hotel/parallax/izktfiyudwsr2vj38kpe"),
+    createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
   ];
 }
