@@ -5,7 +5,7 @@ import Burger from "./Burger/Burger";
 import Nav from "./Nav/Nav";
 import { useState } from "react";
 import Button from "@mui/material/Button";
-import Link from "next/Link";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const Header = () => {
