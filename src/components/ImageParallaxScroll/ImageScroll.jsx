@@ -5,18 +5,18 @@ import Lenis from "@studio-freight/lenis";
 import { useTransform, useScroll, motion } from "framer-motion";
 import module from "./imagescroll.module.scss";
 
-import img1 from "../../../public/parallax/p1.JPG";
-import img2 from "../../../public/parallax/p2.jpg";
-import img3 from "../../../public/parallax/p3.jpg";
-import img4 from "../../../public/parallax/p4.jpg";
-import img5 from "../../../public/parallax/p5.jpg";
-import img6 from "../../../public/parallax/p6.jpg";
-import img7 from "../../../public/parallax/p7.jpg";
-import img8 from "../../../public/parallax/p8.jpg";
-import img9 from "../../../public/parallax/p9.jpg";
-import img10 from "../../../public/parallax/p10.jpg";
-import img11 from "../../../public/parallax/p11.JPG";
-import img12 from "../../../public/parallax/p12.jpg";
+import img1 from "@/assets/parallax/p1.JPG";
+import img2 from "@/assets/parallax/p2.jpg";
+import img3 from "@/assets/parallax/p3.jpg";
+import img4 from "@/assets/parallax/p4.jpg";
+import img5 from "@/assets/parallax/p5.jpg";
+import img6 from "@/assets/parallax/p6.jpg";
+import img7 from "@/assets/parallax/p7.jpg";
+import img8 from "@/assets/parallax/p8.jpg";
+import img9 from "@/assets/parallax/p9.jpg";
+import img10 from "@/assets/parallax/p10.jpg";
+import img11 from "@/assets/parallax/p11.JPG";
+import img12 from "@/assets/parallax/p12.jpg";
 import CustomButton from "../customButton/CustomButton";
 
 const images = [
@@ -95,7 +95,7 @@ const Column = ({ images, y }) => {
       {images.map((src, i) => {
         return (
           <div key={i} className={module.imageContainer}>
-            <Image src={src} alt="image" fill />
+            <Image src={src} alt="image" width={800} height={600} />
           </div>
         );
       })}
