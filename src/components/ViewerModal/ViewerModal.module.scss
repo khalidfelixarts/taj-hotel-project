@@ -1,0 +1,16 @@
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 10vh;
+  right: 3vw;
+  font-size: 2rem;
+  color: #fff;
+  background: #8b0000;
+  border-radius: 5rem;
+  padding: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.close:hover {
+  background: #ff0000;
+}

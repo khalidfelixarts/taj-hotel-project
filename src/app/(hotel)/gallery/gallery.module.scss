@@ -1,0 +1,69 @@
+.gallery__parent {
+  // padding-top: 120px;
+  min-height: 200vh;
+  // min-width: 800px;
+  width: 100%;
+  background-color: #e0e0e0;
+
+  .screen__image {
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    .screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000ca;
+    }
+  }
+
+  .gallery__grid {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+
+    .card {
+      background: #ffffff6e;
+      // filter: blur(2px);
+      transition: transform 0.3s ease;
+      box-shadow: 4px 4px 25px -11px rgba(0, 0, 0, 0.75);
+    }
+
+    .card:hover {
+      box-shadow: 4px 4px 36px -5px rgba(0, 0, 0, 0.75);
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS rules specific to tablets */
+  .gallery__parent {
+    .screen__image {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  /* CSS rules specific to mobile devices */
+  .gallery__parent {
+    .screen__image {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+}

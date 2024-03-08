@@ -8,6 +8,9 @@ import React from "react";
 import RoomsSection from "@/components/RoomsSection/RoomsSection";
 import CarouselNew from "@/components/carouselnew/CarouselNew";
 import ImageScroll from "@/components/ImageParallaxScroll/ImageScroll";
+import NewRoomSection from "@/components/NewRoomSection/NewRoomSection";
+import ExploreDeepali from "@/components/ExploreDeepali/ExploreDeepali";
+import OurAncillaryServices from "@/components/OurAncillaryServices/OurAncillaryServices";
 
 const Home = () => {
   return (
@@ -33,9 +36,15 @@ const Home = () => {
       {/* <UserBookings /> */}
       {/* </div> */}
 
+      {/* <NewRoomSection /> */}
+
       <RoomsSection />
 
       <ImageScroll />
+
+      <OurAncillaryServices />
+
+      <ExploreDeepali />
     </main>
   );
 };
