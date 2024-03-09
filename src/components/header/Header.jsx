@@ -7,6 +7,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import LOGO from "../../../public/assets/logo.png";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
@@ -17,9 +18,10 @@ const Header = () => {
       <header className="header">
         <Image
           onClick={() => router.push("/")}
-          src="https://res.cloudinary.com/de0llaul4/image/upload/v1708866033/Hotel/eloeu9luhnuxlffmoq0i.png"
-          width={85}
-          height={50}
+          src={LOGO}
+          // src="https://res.cloudinary.com/de0llaul4/image/upload/v1708866033/Hotel/eloeu9luhnuxlffmoq0i.png"
+          width={120}
+          height={55}
           style={{ padding: "1px" }}
         />
 

@@ -1,4 +1,4 @@
-function createImgUrl(pid) {
+export function createImgUrl(pid) {
   return `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/${pid}.jpg`;
 }
 
@@ -103,7 +103,7 @@ export class Constants {
       rating: 4,
       description:
         "Comfort and affordability meet in our Standard Rooms, providing essential amenities for a pleasant stay.",
-      price: "500",
+      price: "9999",
       link: "/book/standard",
     },
     {
@@ -112,7 +112,7 @@ export class Constants {
       rating: 5,
       description:
         "Experience the luxury of space and style with our Duplex rooms, offering a sophisticated two-level layout for ultimate relaxation.",
-      price: "1000",
+      price: "19999",
       link: "/book/duplex",
     },
     {
@@ -121,7 +121,7 @@ export class Constants {
       rating: 5,
       description:
         "Indulge in luxury and refinement with our Suites, offering spacious accommodations and elevated amenities for an unforgettable stay.",
-      price: "1500",
+      price: "29999",
       link: "/book/suite",
     },
   ];

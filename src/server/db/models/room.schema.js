@@ -2,15 +2,6 @@ import mongoose from "mongoose";
 
 // Define schema for rooms
 const roomSchema = new mongoose.Schema({
-  hotelId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Hotel",
-    required: true,
-  },
-  // roomNumber: {
-  //   type: Number,
-  //   required: true,
-  // },
   type: {
     type: String,
     enum: ["Standard", "Duplex", "Suite"],
@@ -25,10 +16,29 @@ const roomSchema = new mongoose.Schema({
     required: true,
     default: true, // Assuming the room is initially available
   },
-  description: {
-    type: String,
-    required: true,
+
+  roomDetails: {
+    shortDescription: {
+      type: String,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    size: {
+      type: String,
+    },
+    signatureFeature: {
+      type: String,
+    },
+    conveniences: {
+      type: [String],
+    },
   },
+  occupancyDetails: {
+    type: String,
+  },
+
   images: {
     type: [String],
     required: true,

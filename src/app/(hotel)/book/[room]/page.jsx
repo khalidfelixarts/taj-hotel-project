@@ -2,6 +2,8 @@ import React from "react";
 import module from "./room.module.scss";
 import Image from "next/image";
 import { Constants } from "@/utils/constants";
+import BookRoom from "@/components/bookroom/BookRoom";
+import BookingWindow from "./BookingWindow";
 
 const Page = ({ params }) => {
   let details;
@@ -28,6 +30,7 @@ const Page = ({ params }) => {
           />
         </div>
       </div>
+      <BottomPart params={params} />
     </>
   );
 };
@@ -68,5 +71,14 @@ const RightPart = ({ params }) => {
     </div>
   );
 };
+
+function BottomPart({ params }) {
+  return (
+    <>
+      <BookRoom />
+      <BookingWindow params={params} />
+    </>
+  );
+}
 
 export default Page;
