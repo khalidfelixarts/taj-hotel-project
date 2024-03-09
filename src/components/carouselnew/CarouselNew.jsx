@@ -9,7 +9,7 @@ import { Constants } from "@/utils/constants";
 import { Box } from "@mui/material";
 
 const CarouselNew = () => {
-  var settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,

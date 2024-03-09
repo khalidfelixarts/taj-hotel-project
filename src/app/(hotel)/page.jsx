@@ -11,6 +11,7 @@ import ImageScroll from "@/components/ImageParallaxScroll/ImageScroll";
 import NewRoomSection from "@/components/NewRoomSection/NewRoomSection";
 import ExploreDeepali from "@/components/ExploreDeepali/ExploreDeepali";
 import OurAncillaryServices from "@/components/OurAncillaryServices/OurAncillaryServices";
+import Divider from "@/components/Divider/Divider";
 
 const Home = () => {
   return (
@@ -42,7 +43,11 @@ const Home = () => {
 
       <ImageScroll />
 
+      <Divider />
+
       <OurAncillaryServices />
+
+      <Divider />
 
       <ExploreDeepali />
     </main>

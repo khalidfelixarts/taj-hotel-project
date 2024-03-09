@@ -16,8 +16,8 @@ const NewRoomSection = () => {
       <div className={module.screen}></div>
 
       <div className={module.content}>
-        {Constants.Rooms.map((room) => (
-          <div>{room.type}</div>
+        {Constants.Rooms.map((room, index) => (
+          <div key={index}>{room.type}</div>
         ))}
       </div>
     </div>

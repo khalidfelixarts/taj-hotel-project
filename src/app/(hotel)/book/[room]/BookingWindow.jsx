@@ -34,7 +34,7 @@ const BookingWindow = ({ params }) => {
       <div className={module.room__parent}>
         <div className={module.room__nav}>
           {numberOfRooms.map((i, index) => (
-            <div className={module.nav__item__parent}>
+            <div key={index} className={module.nav__item__parent}>
               <div className={module.nav__item} key={index}>
                 <span>
                   {index + 1}

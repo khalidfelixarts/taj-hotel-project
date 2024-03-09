@@ -15,57 +15,82 @@ const OurAncillaryServices = () => {
         {[1, 2, 3, 4].map((i, index) => (
           <Box
             key={index}
-            className={module.card}
             sx={{
-              minWidth: "400px",
-              height: "100%",
-              marginLeft: "1px",
+              overflowY: "hidden",
+              height: "600px",
+              width: "450px",
+              // minWidth: "200px",
             }}
           >
             <Box
-              className={module.card__top}
+              className={module.card}
               sx={{
-                background: "#000",
                 minWidth: "400px",
-                color: "white",
-                position: "relative",
-                //   height: "40%",
+                height: "100%",
+                // marginLeft: "1px",
+                // marginRight: "1px",
               }}
             >
-              <Image src={img} fill />
+              <Box
+                className={module.card__top}
+                sx={{
+                  background: "#000",
+                  minWidth: "400px",
+                  color: "white",
+                  position: "relative",
+                  //   height: "40%",
+                }}
+              >
+                <Image src={img} fill />
+                <Box
+                  sx={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    background: "rgba(0,0,0,0.4)",
+                  }}
+                />
+                <Box
+                  className={module.title__text}
+                  sx={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <h1 style={{ fontSize: "32px", color: "#fff" }}>
+                    Sample Title
+                  </h1>
+                </Box>
+              </Box>
+
               <Box
                 sx={{
-                  position: "absolute",
-                  width: "100%",
-                  height: "100%",
-                  background: "rgba(0,0,0,0.4)",
+                  background: "#e0e0e0",
+                  minWidth: "400px",
+                  height: "60%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  padding: "10px",
+                  gap: "15px",
                 }}
-              />
-            </Box>
-
-            <Box
-              sx={{
-                background: "#e0e0e0",
-                minWidth: "400px",
-                height: "60%",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "10px",
-                gap: "15px",
-              }}
-            >
-              <h2>Sample Title</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                ea ab placeat vel quidem asperiores nulla dolores animi earum
-                nisi, amet possimus accusamus rerum totam modi consequatur porro
-                aliquid adipisci!
-              </p>
-              <CustomButton href={"#"} width={"170px"}>
-                Know More
-              </CustomButton>
+              >
+                <h2>Sample Title</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
+                  ea ab placeat vel quidem asperiores nulla dolores animi earum
+                  nisi, amet possimus accusamus rerum totam modi consequatur
+                  porro aliquid adipisci!
+                </p>
+                <CustomButton href={"#"} width={"170px"}>
+                  Know More
+                </CustomButton>
+              </Box>
             </Box>
           </Box>
         ))}

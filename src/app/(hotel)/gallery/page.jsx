@@ -44,7 +44,7 @@ const Gallery = () => {
           </Box>
         </Box>
 
-        <div className={module.screen__image}>
+        {/* <div className={module.screen__image}>
           <Image
             src={createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1")}
             alt="screen"
@@ -70,7 +70,7 @@ const Gallery = () => {
               thoughtful touches to ensure your comfort throughout your stay.
             </p>
           </Box>
-        </div>
+        </div> */}
 
         <GalleryGrid
           setImg={setImg}
@@ -84,13 +84,77 @@ const Gallery = () => {
 };
 
 function GalleryGrid({ setImg, setIsOpened, isOpened }) {
+  const content = [
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+    },
+  ];
+
   return (
     <div className={module.gallery__grid}>
-      {[1, 2, 3, 4, 5, 6, 7, 8].map((i, index) => (
+      {content?.map((i, index) => (
         <Box
+          key={index}
           onClick={() => {
             setIsOpened(!isOpened);
-            setImg(createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"));
+            setImg(i?.img);
           }}
           className={module.card}
           sx={{
@@ -100,11 +164,7 @@ function GalleryGrid({ setImg, setIsOpened, isOpened }) {
             height: "500px",
           }}
         >
-          <Image
-            style={{ objectFit: "cover" }}
-            src={createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1")}
-            fill
-          />
+          <Image style={{ objectFit: "cover" }} src={i?.img} fill />
 
           <Box
             sx={{
@@ -117,10 +177,11 @@ function GalleryGrid({ setImg, setIsOpened, isOpened }) {
               alignItems: "center",
               color: "#fff",
               padding: "4%",
+              textAlign: "center",
             }}
           >
-            <span style={{ fontSize: "28px" }}>SAMPLE</span>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <span style={{ fontSize: "28px" }}>{i?.title}</span>
+            <p>{i?.para}</p>
           </Box>
         </Box>
       ))}
