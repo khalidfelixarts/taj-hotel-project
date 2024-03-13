@@ -1,8 +1,21 @@
+import M1 from "../../public/assets/carousel/m1.jpg";
+import M2 from "../../public/assets/carousel/m2.jpg";
+import M3 from "../../public/assets/carousel/m3.jpg";
+import M4 from "../../public/assets/carousel/m4.jpg";
+
+import D1 from "../../public/assets/carousel/d1.jpg";
+import D2 from "../../public/assets/carousel/d2.jpg";
+import D3 from "../../public/assets/carousel/d3.jpg";
+import D4 from "../../public/assets/carousel/d4.jpg";
+
 export function createImgUrl(pid) {
   return `https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/${pid}.jpg`;
 }
 
 export class Constants {
+  static carouselMobile = [{ img: M1 }, { img: M2 }, { img: M3 }, { img: M4 }];
+  static carouselDesktop = [{ img: D1 }, { img: D2 }, { img: D3 }, { img: D4 }];
+
   static carouselData = [
     {
       key: "slide1",

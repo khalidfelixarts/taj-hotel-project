@@ -1,8 +1,12 @@
 .header {
   position: fixed;
   z-index: 999;
-  color: white;
-  background: linear-gradient(45deg, #263238, #212121);
+  // color: white;
+  color: var(--header-text-light);
+  // background: linear-gradient(45deg, #263238, #212121);
+  // background: linear-gradient(45deg, #ffffff, #ffffff);
+  background: var(--header-background-light);
+
   // background: linear-gradient(45deg, #5c3f10, #c48333, #946610);
   width: 100%;
   height: 75px;
@@ -52,8 +56,8 @@
   }
   .book__button {
     cursor: pointer;
-    margin-right: auto;
-    background: linear-gradient(45deg, #40545e, #363636);
+    // margin-right: auto;
+    background: linear-gradient(45deg, #5c3f10, #c48333, #946610);
 
     // background: linear-gradient(to top, #7b5519, #aa7938 52%, #d29851);
     padding: 8px;
@@ -64,7 +68,7 @@
   }
 
   .book__button:hover {
-    background: linear-gradient(45deg, #5c3f10, #c48333, #946610);
+    background: linear-gradient(45deg, #40545e, #363636);
   }
 
   .burger {

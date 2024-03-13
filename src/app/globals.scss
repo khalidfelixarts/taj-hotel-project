@@ -6,7 +6,42 @@
 
 body {
   font-family: futura3, futura2;
-  background: #e0e0e0;
+  background: #ffffff;
+}
+
+:root {
+  --nav-background-light: #fafafa;
+  // --nav-background-dark: linear-gradient(90deg, rgb(22, 29, 32), #212121ce);
+  --nav-text-light: #212121;
+
+  --header-background-light: #fff;
+  // --header-background-dark: linear-gradient(45deg, #263238, #212121);
+  --header-text-light: #363636;
+  // --header-text-dark: #fff;
+
+  --card-section-light: linear-gradient(45deg, #dd9946, #ffffff, #dd9946);
+  // --card-section-dark: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+
+  --card-background-light: linear-gradient(90deg, #212121, #53442c);
+  // --card-background-dark: #151515;
+
+  --light-body: #fff;
+  --light-text: #242424;
+}
+
+.themeProvider.dark {
+  --nav-background-light: linear-gradient(90deg, rgb(22, 29, 32), #212121ce);
+  --nav-text-light: #ffffff;
+
+  --header-background-light: linear-gradient(45deg, #263238, #212121);
+  --header-text-light: #fff;
+
+  --card-section-light: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+
+  --card-background-light: #151515;
+
+  --light-body: linear-gradient(0deg, #212121, #292929ce);
+  --light-text: #fff;
 }
 
 @font-face {

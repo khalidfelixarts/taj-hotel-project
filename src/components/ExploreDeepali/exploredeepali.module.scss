@@ -1,11 +1,11 @@
 .explore__deepali__parent {
   padding-top: 20px;
-  background: #e0e0e0;
+  background: var(--light-body);
   text-align: center;
   margin-top: 80px;
   .title {
     text-transform: uppercase;
-    color: #333333;
+    color: var(--light-text);
     font-size: 3rem;
     padding-bottom: 20px;
     text-align: center;

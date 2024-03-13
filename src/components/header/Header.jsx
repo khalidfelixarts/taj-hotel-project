@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import LOGO from "../../../public/assets/logo.png";
+import ToggleTheme from "../Toggle/ToggleTheme";
 
 const Header = () => {
   const [navState, setNavState] = useState(false);
@@ -56,6 +57,9 @@ const Header = () => {
         <Button className="book__button" variant="contained">
           <Link href="#rooms">BOOK A STAY</Link>
         </Button>
+
+        <ToggleTheme sx={{ marginLeft: "auto", scale: "0.6" }} />
+
         {/* <span className="book__button">BOOK A STAY</span> */}
         <Burger
           className={"burger"}

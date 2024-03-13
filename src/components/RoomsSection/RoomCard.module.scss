@@ -15,7 +15,7 @@
 
 .card {
   overflow: visible;
-  width: 400px;
+  width: 360px;
   height: 500px;
   cursor: pointer;
 }
@@ -73,7 +73,9 @@
   position: absolute;
   width: 99%;
   height: 99%;
-  background-color: #151515;
+  // background-color: #151515;
+  background: var(--card-background-light);
+  // background: linear-gradient(90deg, #3a3223, #2b251c);
   // background: linear-gradient(45deg, #263238, #212121);
   border-radius: 5px;
   color: white;
@@ -172,7 +174,7 @@
   justify-content: space-between;
 
   //////////////////
-  background: linear-gradient(-45deg, #b8975b, #daa520, #e6be8a);
+  background: linear-gradient(-45deg, #b8975b, #ffe39c, #ffffff);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 

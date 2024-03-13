@@ -1,6 +1,8 @@
 .rooms__section__parent {
   // background-color: #e0e0e0;
-  background: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+  // background: linear-gradient(45deg, #5c3f10, #dd9946, #ffd588);
+  // background: linear-gradient(45deg, #dd9946, #ffffff, #dd9946);
+  background: var(--card-section-light);
   min-height: 80vh;
 
   h1 {

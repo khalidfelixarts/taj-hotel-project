@@ -69,7 +69,7 @@ const OurAncillaryServices = () => {
 
               <Box
                 sx={{
-                  background: "#e0e0e0",
+                  background: "linear-gradient(0deg,#e4e4e4,#fff)",
                   minWidth: "400px",
                   height: "60%",
                   display: "flex",

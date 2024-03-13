@@ -1,6 +1,9 @@
 import React from "react";
 import "./nav.scss";
 import Link from "next/link";
+import { Box } from "@mui/material";
+import { useSelector } from "react-redux";
+import ToggleTheme from "@/components/Toggle/ToggleTheme";
 
 const Nav = ({ isActive }) => {
   const navItems = [
@@ -38,8 +41,17 @@ const Nav = ({ isActive }) => {
     },
   ];
 
+  const theme = useSelector((state) => state?.theme?.theme);
+
   return (
-    <div className={`nav__parent ${isActive && "nav__active"}`}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+      }}
+      className={`nav__parent ${isActive && "nav__active"}`}
+    >
       <ul className="menu">
         {navItems?.map((i, index) => (
           <li key={index} className="menu__item">
@@ -49,7 +61,27 @@ const Nav = ({ isActive }) => {
           </li>
         ))}
       </ul>
-    </div>
+      <Box
+        sx={{
+          height: "10%",
+          paddingLeft: "40px",
+          display: "flex",
+          paddingBottom: "40px",
+        }}
+      >
+        <ToggleTheme />
+        <span
+          style={{
+            marginLeft: "10px",
+            padding: "4px",
+            fontSize: "1.7rem",
+            color: `${theme ? "#fff" : "#212121"}`,
+          }}
+        >
+          {theme ? "Dark Mode" : "Light Mode"}
+        </span>
+      </Box>
+    </Box>
   );
 };
 

@@ -6,6 +6,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import CustomTheme from "./CustomTheme";
 
 export const metadata = {
   title: "Taj Hotels",
@@ -15,10 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body id="body" className="">
         <ReduxProvider>
-          <Toaster richColors position="bottom-right" />
-          {children}
+          <CustomTheme>
+            <Toaster richColors position="bottom-right" />
+            {children}
+          </CustomTheme>
         </ReduxProvider>
       </body>
     </html>

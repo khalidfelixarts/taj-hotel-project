@@ -5,7 +5,6 @@ const Divider = () => {
   return (
     <Box
       sx={{
-        marginTop: "100px",
         width: "90%",
         height: "3px",
         marginX: "auto",
