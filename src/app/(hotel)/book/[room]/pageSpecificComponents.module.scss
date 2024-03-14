@@ -1,0 +1,37 @@
+.booking__window__parent {
+  height: fit-content;
+  padding-bottom: 100px;
+  margin-top: 20px;
+
+  .add__buttons {
+    background: #fff;
+    border-radius: 4px;
+    color: #c48333;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+      0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    transition: all 0.4s ease;
+    &:hover {
+      background: #c48333;
+      color: #fff;
+    }
+  }
+
+  .booking__window__title {
+    background: linear-gradient(45deg, #d8952a, #c48333, #946610);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+      0 7px 10px -5px rgba(255, 152, 0, 0.4);
+  }
+  .booking__bottom__title {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+      0 7px 10px -5px rgba(255, 152, 0, 0.4);
+  }
+
+  .room__card {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14),
+      0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    color: var(--header-text-light);
+    background: var(--header-background-light);
+  }
+}

@@ -3,8 +3,8 @@ import module from "./room.module.scss";
 import Image from "next/image";
 import { Constants } from "@/utils/constants";
 import BookRoom from "@/components/bookroom/BookRoom";
-import BookingWindow from "./BookingWindow";
 import { Box } from "@mui/material";
+import { BottomPart } from "./pageSpecificComponents";
 
 const Page = ({ params }) => {
   let details;
@@ -16,113 +16,82 @@ const Page = ({ params }) => {
 
   return (
     <>
-      <div className={module.room__page__parent}>
-        <div className={module.booking__window}>
-          <LeftPart params={params} />
-          <RightPart params={params} />
-        </div>
-
-        <div className={module.image__parent}>
-          <Image
-            src={details.img}
-            alt={details.description}
-            width={1280}
-            height={720}
-          />
-        </div>
-      </div>
-      <BottomPart params={params} />
+      <TopPart details={details} />
+      <Box className={module.booking__body}>
+        <BottomPart params={params} />
+      </Box>
     </>
   );
 };
 
-const LeftPart = ({ params }) => {
-  let details;
-  Constants.Rooms.forEach((room) => {
-    if (room.type.toLowerCase() == params.room) {
-      details = room;
-    }
-  });
-
+function TopPart({ details }) {
   return (
-    <div className={module.left__part}>
-      <div className={module.text__container}>
-        <span>Reserve Your Ideal Holiday</span>
-      </div>
-      <p>{details.description}</p>
-    </div>
-  );
-};
-
-const RightPart = ({ params }) => {
-  let details;
-  Constants.Rooms.forEach((room) => {
-    if (room.type.toLowerCase() == params.room) {
-      details = room;
-    }
-  });
-  return (
-    <div className={module.right__part}>
-      <Image
-        src={details.img}
-        alt={details.description}
-        width={1280}
-        height={720}
-      />
-    </div>
-  );
-};
-
-function BottomPart({ params }) {
-  return (
-    <>
-      {/* <BookRoom /> */}
-      {/* <BookingWindow params={params} /> */}
-
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
+        height: "100vh",
+        position: "relative",
+      }}
+    >
+      <Image style={{ objectFit: "cover" }} src={details.img} fill />
       <Box
         sx={{
-          width: "100%",
-          minHeight: "40vh",
-          paddingTop: "20px",
+          overflow: "hidden",
+          width: "98%",
+          maxWidth: "1300px",
+          height: "80vh",
+          position: "absolute",
+          borderRadius: "50px",
+          border: "2px solid #c7a982",
         }}
       >
         <Box
-          className={module.booking__window__parent}
           sx={{
-            marginX: "auto",
-            width: { xs: "95vw" },
-            maxWidth: "800px",
-            height: "400px",
+            display: "flex",
+            flexDirection: { xs: "column", sm: "column", md: "row" },
+            width: "100%",
+            height: "100%",
+            padding: "10px",
+            background: "linear-gradient(45deg, #5c3f10, #c48333, #946610)",
           }}
         >
           <Box
             sx={{
-              height: "50px",
-              display: "flex",
-              alignItems: "center",
-              borderRadius: "10px 10px 0 0",
+              padding: "10px",
+              borderRadius: {
+                xs: "40px 40px 0 0",
+                sm: "40px 40px 0 0",
+                md: "40px 0 0 40px",
+              },
+              width: { xs: "100%", sm: "100%", md: "45%" },
+              height: "100%",
+              background: "#c7a982",
             }}
-            className={module.booking__window__title}
           >
-            <h1
-              style={{
-                fontWeight: "500",
-                fontSize: "32px",
-                marginLeft: "20px",
-              }}
-            >
-              Book Your Stay
-            </h1>
+            <h1>Reserve Your Ideal Holiday</h1>
+            <p>{details.description}</p>
           </Box>
           <Box
-            className={module.room__card}
-            sx={{ my: "5px", minHeight: "60px" }}
+            sx={{
+              overflow: "hidden",
+              position: "relative",
+              borderRadius: {
+                xs: "0 0 40px 40px",
+                sm: "0 0 40px 40px",
+                md: "0 40px  40px 0",
+              },
+              width: { xs: "100%", sm: "100%", md: "55%" },
+              height: "100%",
+            }}
           >
-            Test
+            <Image style={{ objectFit: "cover" }} src={details?.img} fill />
           </Box>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 }
 
