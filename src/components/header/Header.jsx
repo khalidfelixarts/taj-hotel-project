@@ -58,7 +58,13 @@ const Header = () => {
           <Link href="#rooms">BOOK A STAY</Link>
         </Button>
 
-        <ToggleTheme sx={{ marginLeft: "auto", scale: "0.6" }} />
+        <ToggleTheme
+          sx={{
+            marginLeft: "auto",
+            scale: "0.6",
+            display: { xs: "none", sm: "block" },
+          }}
+        />
 
         {/* <span className="book__button">BOOK A STAY</span> */}
         <Burger
