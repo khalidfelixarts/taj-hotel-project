@@ -9,6 +9,7 @@ import { useState } from "react";
 import RemoveIcon from "@mui/icons-material/Remove";
 import AddIcon from "@mui/icons-material/Add";
 import Button from "@mui/material/Button";
+import CustomButton from "@/components/customButton/CustomButton";
 
 export function BottomPart({ params }) {
   //////////////////////////////////////////////////////////////////////////
@@ -122,6 +123,84 @@ export function BottomPart({ params }) {
     );
   }
 
+  function AddRoomWindow() {
+    return (
+      <Box
+        sx={{
+          px: "10px",
+          py: "20px",
+          display: "flex",
+          flexDirection: { xs: "column", sm: "column", md: "row" },
+          alignItems: "center",
+          justifyContent: "space-around",
+          textWrap: "nowrap",
+          gap: "20px",
+        }}
+      >
+        <h2>Add Room</h2>
+
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "15px",
+            flexWrap: "wrap",
+          }}
+        >
+          <Button
+            sx={{ display: "flex", gap: "10px", width: "160px" }}
+            className={module.add__buttons}
+            variant="contained"
+          >
+            <AddIcon
+              className={module.add__buttons}
+              sx={{
+                cursor: "pointer",
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+              }}
+            />
+            STANDARD
+          </Button>
+
+          <Button
+            sx={{ display: "flex", gap: "10px", width: "160px" }}
+            className={module.add__buttons}
+            variant="contained"
+          >
+            <AddIcon
+              className={module.add__buttons}
+              sx={{
+                cursor: "pointer",
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+              }}
+            />
+            DUPLEX
+          </Button>
+          <Button
+            sx={{ display: "flex", gap: "10px", width: "160px" }}
+            className={module.add__buttons}
+            variant="contained"
+          >
+            <AddIcon
+              className={module.add__buttons}
+              sx={{
+                cursor: "pointer",
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+              }}
+            />
+            SUITE
+          </Button>
+        </Box>
+      </Box>
+    );
+  }
+
   /////////////////////////////////////////////////////////////////////////////
   return (
     <>
@@ -152,8 +231,8 @@ export function BottomPart({ params }) {
           >
             <h1
               style={{
-                fontWeight: "500",
-                letterSpacing: "1px",
+                fontWeight: "700",
+                // letterSpacing: "1px",
                 marginLeft: "20px",
               }}
             >
@@ -165,12 +244,14 @@ export function BottomPart({ params }) {
           <AddRoomWindow />
           <Box
             sx={{
-              height: "50px",
+              height: { xs: "130px", sm: "120px", md: "80px" },
+              gap: "10px",
               display: "flex",
-              justifyContent: "flex-end",
+              justifyContent: { xs: "center", md: "flex-end" },
               alignItems: "center",
               px: "20px",
               borderRadius: "0 0 10px 10px",
+              flexDirection: { xs: "column", sm: "row" },
             }}
             className={module.booking__bottom__title}
           >
@@ -179,91 +260,17 @@ export function BottomPart({ params }) {
                 fontWeight: "500",
                 fontSize: "20px",
                 marginLeft: "20px",
+                textWrap: "nowrap",
               }}
             >
               TotalCost: <span style={{ fontWeight: "800" }}>₹9999</span>
             </h1>
+            <Button className={module.confirm__buttons} variant="contained">
+              Confirm Booking
+            </Button>
           </Box>
         </Box>
       </Box>
     </>
-  );
-}
-
-function AddRoomWindow() {
-  return (
-    <Box
-      sx={{
-        px: "10px",
-        py: "20px",
-        display: "flex",
-        flexDirection: { xs: "column", sm: "column", md: "row" },
-        alignItems: "center",
-        justifyContent: "space-around",
-        textWrap: "nowrap",
-        gap: "20px",
-      }}
-    >
-      <h2>Add Room</h2>
-
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "15px",
-          flexWrap: "wrap",
-        }}
-      >
-        <Button
-          sx={{ display: "flex", gap: "10px", width: "160px" }}
-          className={module.add__buttons}
-          variant="contained"
-        >
-          <AddIcon
-            className={module.add__buttons}
-            sx={{
-              cursor: "pointer",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-            }}
-          />
-          STANDARD
-        </Button>
-
-        <Button
-          sx={{ display: "flex", gap: "10px", width: "160px" }}
-          className={module.add__buttons}
-          variant="contained"
-        >
-          <AddIcon
-            className={module.add__buttons}
-            sx={{
-              cursor: "pointer",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-            }}
-          />
-          DUPLEX
-        </Button>
-        <Button
-          sx={{ display: "flex", gap: "10px", width: "160px" }}
-          className={module.add__buttons}
-          variant="contained"
-        >
-          <AddIcon
-            className={module.add__buttons}
-            sx={{
-              cursor: "pointer",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-            }}
-          />
-          SUITE
-        </Button>
-      </Box>
-    </Box>
   );
 }

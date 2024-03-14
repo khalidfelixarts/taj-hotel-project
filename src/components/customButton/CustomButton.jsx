@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import module from "./custombutton.module.scss";
+import { Box } from "@mui/material";
 
-const CustomButton = ({ href, width, children }) => {
+const CustomButton = ({ href, width, sx, children }) => {
   return (
-    <div
+    <Box
+      sx={{ ...sx }}
       style={{ width: width ? width : "" }}
       className={module.custom__button__parent}
     >
@@ -13,7 +15,7 @@ const CustomButton = ({ href, width, children }) => {
           <span className={module.gallery__button}>{children}</span>
         </h4>
       </Link>
-    </div>
+    </Box>
   );
 };
 
