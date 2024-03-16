@@ -5,7 +5,7 @@ import { toast } from "sonner";
 import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { getNumberOfDays } from "@/app/utils/utils";
+import { getNumberOfDays } from "@/utils/utils";
 
 import { useSelector } from "react-redux";
 
