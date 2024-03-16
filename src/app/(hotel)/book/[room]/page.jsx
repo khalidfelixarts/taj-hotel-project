@@ -1,24 +1,33 @@
+"use server";
 import React from "react";
 import module from "./room.module.scss";
 import Image from "next/image";
 import { Constants } from "@/utils/constants";
-import BookRoom from "@/components/bookroom/BookRoom";
 import { Box } from "@mui/material";
 import { BottomPart } from "./pageSpecificComponents";
+import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  return Constants?.Rooms?.map((room) => ({
+    room: room?.type?.toLowerCase(),
+  }));
+}
 
 const Page = ({ params }) => {
   let details;
   Constants.Rooms.forEach((room) => {
-    if (room.type.toLowerCase() == params.room) {
+    if (room?.type.toLowerCase() == params?.room) {
       details = room;
     }
   });
+
+  if (!details) return notFound();
 
   return (
     <>
       <TopPart details={details} />
       <Box className={module.booking__body}>
-        <BottomPart params={params} />
+        <BottomPart params={params} details={details} />
       </Box>
     </>
   );
@@ -36,7 +45,7 @@ function TopPart({ details }) {
         position: "relative",
       }}
     >
-      <Image style={{ objectFit: "cover" }} src={details.img} fill />
+      <Image style={{ objectFit: "cover" }} src={details?.img} fill />
       <Box
         sx={{
           overflow: "hidden",
@@ -72,7 +81,7 @@ function TopPart({ details }) {
             }}
           >
             <h1>Reserve Your Ideal Holiday</h1>
-            <p>{details.description}</p>
+            <p>{details?.description}</p>
           </Box>
           <Box
             sx={{
