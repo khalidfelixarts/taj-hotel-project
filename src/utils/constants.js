@@ -116,7 +116,7 @@ export class Constants {
       rating: 4,
       description:
         "Comfort and affordability meet in our Standard Rooms, providing essential amenities for a pleasant stay.",
-      price: 500,
+      price: 1800,
       link: "/book/standard",
     },
     {
@@ -125,7 +125,7 @@ export class Constants {
       rating: 5,
       description:
         "Experience the luxury of space and style with our Duplex rooms, offering a sophisticated two-level layout for ultimate relaxation.",
-      price: 1000,
+      price: 2500,
       link: "/book/duplex",
     },
     {
@@ -134,7 +134,7 @@ export class Constants {
       rating: 5,
       description:
         "Indulge in luxury and refinement with our Suites, offering spacious accommodations and elevated amenities for an unforgettable stay.",
-      price: 1500,
+      price: 3000,
       link: "/book/suite",
     },
   ];
