@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { Box } from "@mui/material";
 
 const Footer = ({ color }) => {
   const theme = useSelector((state) => state?.theme?.theme);
@@ -19,10 +20,15 @@ const Footer = ({ color }) => {
       </svg>
       <div className={module.footer__content}>
         <div className={module.main__content__div}>
-          <div className={module.left__right__parent}>
+          <Box
+            sx={{
+              display: { xs: "block", sm: "block", md: "flex" },
+            }}
+            className={module.left__right__parent}
+          >
             <LeftPart />
             <RightPart />
-          </div>
+          </Box>
           <BottomPart />
         </div>
       </div>
@@ -32,16 +38,44 @@ const Footer = ({ color }) => {
 
 function LeftPart() {
   return (
-    <div className={module.left__part}>
-      <div className={module.footer__nav}>
+    <Box
+      sx={{
+        marginBottom: { xs: "25px", md: "0" },
+        width: { xs: "100%", md: "50%" },
+        display: { xs: "block", md: "flex" },
+      }}
+      className={module.left__part}
+    >
+      <Box
+        sx={{
+          marginBottom: { xs: "25px", md: "" },
+          width: { xs: "100%", md: "50%" },
+          display: "flex",
+          flexDirection: "column",
+        }}
+        className={module.footer__nav}
+      >
         <h2>Keep Exploring</h2>
-        <span>Home</span>
-        <span>About</span>
-        <span>Services</span>
-        <span>Review</span>
-        <span>Blog</span>
-      </div>
-      <div className={module.footer__connect}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "flex-start",
+            flexWrap: "wrap",
+            gap: { xs: "15px", md: "0" },
+            flexDirection: { md: "column" },
+          }}
+        >
+          <span>Home</span>
+          <span>About</span>
+          <span>Services</span>
+          <span>Review</span>
+          <span>Blog</span>
+        </Box>
+      </Box>
+      <Box
+        sx={{ width: { md: "50%" }, height: "100%" }}
+        className={module.footer__connect}
+      >
         <h2>Connect</h2>
         <span>Contact Us</span>
         <div className={module.icons__parent}>
@@ -55,14 +89,14 @@ function LeftPart() {
             <FaYoutube className={module.icon} />
           </div>
         </div>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 
 function RightPart() {
   return (
-    <div className={module.right__part}>
+    <Box sx={{ width: { md: "50%" } }} className={module.right__part}>
       <h2>Stay in the know</h2>
       <p>
         Stay in the know with our exclusive newsletter, delivering the latest
@@ -75,27 +109,35 @@ function RightPart() {
         <input type="email" placeholder="Email" />
         <span>Sign Up</span>
       </div>
-    </div>
+    </Box>
   );
 }
 
 function BottomPart() {
   return (
-    <div className={module.bottom__part__parent}>
-      <div className={module.divider}></div>
+    <Box className={module.bottom__part__parent}>
+      <Box className={module.divider}></Box>
 
-      <div className={module.bottom__content}>
-        <span>Copyright © 2024 Sayma</span>
+      <Box
+        sx={{
+          textAlign: "center",
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: { xs: "column", md: "row" },
+        }}
+        className={module.bottom__content}
+      >
+        <span>Copyright © 2024 SAYMA</span>
 
-        <div>
+        <Box>
           <span>Site Credits</span>
           <span> | </span>
           <span>Terms & Conditions</span>
           <span> | </span>
           <span>Privacy Policy</span>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 export default Footer;

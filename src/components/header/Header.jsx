@@ -55,7 +55,7 @@ const Header = () => {
         </Link>
 
         <Button className="book__button" variant="contained">
-          <Link href="#rooms">BOOK A STAY</Link>
+          <Link href="/#rooms">BOOK A STAY</Link>
         </Button>
 
         <ToggleTheme

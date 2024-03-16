@@ -40,7 +40,7 @@ const Gallery = () => {
               color: "#fff",
             }}
           >
-            <h1 style={{ fontSize: "7rem", fontWeight: "100" }}>GALLERY</h1>
+            <h1 style={{ fontSize: "6rem", fontWeight: "100" }}>GALLERY</h1>
           </Box>
         </Box>
 
@@ -160,7 +160,8 @@ function GalleryGrid({ setImg, setIsOpened, isOpened }) {
           sx={{
             cursor: "pointer",
             position: "relative",
-            width: "400px",
+            maxWidth: "400px",
+            width: "89%",
             height: "500px",
           }}
         >
