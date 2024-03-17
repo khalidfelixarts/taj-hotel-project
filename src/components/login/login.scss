@@ -4,7 +4,7 @@
   align-items: center;
   padding: 50px;
   gap: 20px;
-  background-color: #e0e0e0;
+  // background-color: #e0e0e0;
   // background: linear-gradient(60deg, #263238, #212121);
 
   background-size: 400% 400%;
@@ -23,9 +23,9 @@
   box-sizing: border-box;
   padding: 20px 30px;
 
-  // background: linear-gradient(-45deg, #b8975b, #daa520, #e6be8a);
+  background: linear-gradient(-45deg, #b8975b, #daa520, #e6be8a);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 4s ease infinite;
 }
 
 @keyframes gradient {

@@ -3,16 +3,41 @@ import module from "./OurAncillaryServices.module.scss";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import CustomButton from "../customButton/CustomButton";
+import { createImgUrl } from "@/utils/constants";
 
 const OurAncillaryServices = () => {
-  const img =
-    "https://res.cloudinary.com/de0llaul4/image/upload/v1708862610/Hotel/parallax/upwnssaaks3drqunjqbv.jpg";
+  const ancillaryData = [
+    {
+      title: "TIMELESS WEDDINGS",
+      img: createImgUrl("Hotel/ancillary/rpyxv7l2sbiskumjehsr"),
+      description:
+        "Nestled among lush green spaces in Sagar, Hotel Deepali offers a picturesque backdrop for your special day. Whether you envision an intimate gathering or a grand affair, our versatile event spaces can accommodate weddings of all sizes and styles.",
+    },
+    {
+      title: "CONFERENCES",
+      img: createImgUrl("Hotel/ancillary/qhgog89kdvzarg9j4kfp"),
+      description:
+        "Host your next conference in style and sophistication at our elegant venue, where modern amenities and attentive staff come together to create a professional yet inviting atmosphere conducive to collaboration and success.",
+    },
+    {
+      title: "DINING",
+      img: createImgUrl("Hotel/ancillary/m7embtd6qd7xmhmmmwxb"),
+      description:
+        "Experience the perfect blend of flavors and ambiance with our exclusive dining. Savor the artistry of our world-class chefs as they craft a menu inspired by global flavors and local ingredients.",
+    },
+    {
+      title: "Birthday Parties",
+      img: createImgUrl("Hotel/ancillary/fo7jfznho8rjccpgevou"),
+      description:
+        "Discover serenity in our luxurious suites, where modern elegance meets timeless comfort. Indulge in breathtaking views and personalized service for an unforgettable stay",
+    },
+  ];
 
   return (
     <section className={module.ancillary__parent}>
       <h1 className={module.title}>Our Ancillary Services</h1>
       <div className={module.scrollbar}>
-        {[1, 2, 3, 4].map((i, index) => (
+        {ancillaryData?.map((i, index) => (
           <Box
             key={index}
             sx={{
@@ -41,8 +66,8 @@ const OurAncillaryServices = () => {
                   //   height: "40%",
                 }}
               >
-                <Image src={img} fill />
-                <Box
+                <Image src={i.img} fill />
+                {/* <Box
                   sx={{
                     position: "absolute",
                     width: "100%",
@@ -62,9 +87,9 @@ const OurAncillaryServices = () => {
                   }}
                 >
                   <h1 style={{ fontSize: "32px", color: "#fff" }}>
-                    Sample Title
+                    {i?.title}
                   </h1>
-                </Box>
+                </Box> */}
               </Box>
 
               <Box
@@ -80,13 +105,8 @@ const OurAncillaryServices = () => {
                   gap: "15px",
                 }}
               >
-                <h2>Sample Title</h2>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                  ea ab placeat vel quidem asperiores nulla dolores animi earum
-                  nisi, amet possimus accusamus rerum totam modi consequatur
-                  porro aliquid adipisci!
-                </p>
+                <h2>{i?.title}</h2>
+                <p>{i?.description}</p>
                 <CustomButton href={"#"} width={"170px"}>
                   Know More
                 </CustomButton>

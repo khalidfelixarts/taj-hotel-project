@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body id="body" className="">
         <ReduxProvider>
           <CustomTheme>
-            <Toaster richColors position="bottom-right" />
+            <Toaster richColors position="top-right" />
             {children}
           </CustomTheme>
         </ReduxProvider>

@@ -50,7 +50,7 @@ const Header = () => {
           </nav>
         </ul>
 
-        <Link href="/register">
+        <Link href="/signup">
           <p>SIGN UP</p>
         </Link>
 
