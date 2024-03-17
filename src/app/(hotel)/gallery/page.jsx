@@ -93,7 +93,37 @@ function GalleryGrid({ setImg, setIsOpened, isOpened }) {
     {
       title: "DEEPALI PALACE",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+      img: createImgUrl("Hotel/parallax/izktfiyudwsr2vj38kpe"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/euxqizxd0k8lyqeswk3g"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/xrbb9ttwthiaqoit2rik"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/de2grlpoawmolo6klxse"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/zdeurpkvinvp5omnnoka"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/stfcvqvaocqefizfal6y"),
+    },
+    {
+      title: "DEEPALI PALACE",
+      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
+      img: createImgUrl("Hotel/parallax/euxqizxd0k8lyqeswk3g"),
     },
     {
       title: "DEEPALI PALACE",
@@ -103,47 +133,17 @@ function GalleryGrid({ setImg, setIsOpened, isOpened }) {
     {
       title: "DEEPALI PALACE",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+      img: createImgUrl("Hotel/parallax/egyppnrlghuo0zt17qm0"),
     },
     {
       title: "DEEPALI PALACE",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/w7e9m3h3qmxeu3auppro"),
+      img: createImgUrl("Hotel/parallax/upwnssaaks3drqunjqbv"),
     },
     {
       title: "DEEPALI PALACE",
       para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
-    },
-    {
-      title: "DEEPALI PALACE",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, laudantium?",
-      img: createImgUrl("Hotel/parallax/i8v5s4b0kbguv4byvxy1"),
+      img: createImgUrl("Hotel/parallax/ejgbhldp4bi8stogm608"),
     },
   ];
 

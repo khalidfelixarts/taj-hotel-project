@@ -32,9 +32,9 @@ export function BottomPart({ params, details }) {
 
   const extraChargePerPerson = () => {
     let baseExtraCharge = 0;
-    if (params?.room === "standard") baseExtraCharge = 200;
-    else if (params?.room === "duplex") baseExtraCharge = 400;
-    else if (params?.room === "suite") baseExtraCharge = 800;
+    if (params?.room === "standard") baseExtraCharge = details?.price * 0.4;
+    else if (params?.room === "duplex") baseExtraCharge = details?.price * 0.4;
+    else if (params?.room === "suite") baseExtraCharge = details?.price * 0.4;
 
     const totalExtraCharge =
       baseExtraCharge *

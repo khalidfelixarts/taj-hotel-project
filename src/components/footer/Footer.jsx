@@ -6,6 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Box } from "@mui/material";
+import Link from "next/link";
 
 const Footer = ({ color }) => {
   const theme = useSelector((state) => state?.theme?.theme);
@@ -65,11 +66,30 @@ function LeftPart() {
             flexDirection: { md: "column" },
           }}
         >
-          <span>Home</span>
-          <span>About</span>
-          <span>Services</span>
-          <span>Review</span>
-          <span>Blog</span>
+          <Link style={{ textDecoration: "none", color: "inherit" }} href={"/"}>
+            <span>Home</span>
+          </Link>
+          <Link style={{ textDecoration: "none", color: "inherit" }} href={"/"}>
+            <span>About</span>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            href={"/#rooms"}
+          >
+            <span>Services</span>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            href={"/#"}
+          >
+            <span>Review</span>
+          </Link>
+          <Link
+            style={{ textDecoration: "none", color: "inherit" }}
+            href={"/#"}
+          >
+            <span>Blog</span>
+          </Link>
         </Box>
       </Box>
       <Box
@@ -127,7 +147,7 @@ function BottomPart() {
         }}
         className={module.bottom__content}
       >
-        <span>Copyright © 2024 SAYMA</span>
+        <span>Copyright © 2024 Avis Media</span>
 
         <Box>
           <span>Site Credits</span>

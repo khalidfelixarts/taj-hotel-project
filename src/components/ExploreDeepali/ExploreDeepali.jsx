@@ -85,13 +85,13 @@ const ExploreDeepali = () => {
               }}
             >
               <Image src={ImgUrl[0]} fill />
-              <span
+              {/* <span
                 style={{
                   ...textStyle,
                 }}
               >
                 TIMELESS WEDDINGS
-              </span>
+              </span> */}
             </Box>
             {/*  */}
 
@@ -113,7 +113,7 @@ const ExploreDeepali = () => {
                 }}
               >
                 <Image src={ImgUrl[1]} fill />
-                <span style={{ ...textStyle }}>Sample 1</span>
+                {/* <span style={{ ...textStyle }}>Sample 1</span> */}
               </Box>
               <Box
                 sx={{
@@ -124,7 +124,7 @@ const ExploreDeepali = () => {
                 }}
               >
                 <Image src={ImgUrl[1]} fill />
-                <span style={{ ...textStyle }}>Sample 1</span>
+                {/* <span style={{ ...textStyle }}>Sample 1</span> */}
               </Box>
             </Box>
 
@@ -146,7 +146,7 @@ const ExploreDeepali = () => {
               }}
             >
               <Image src={ImgUrl[2]} fill />
-              <span style={{ ...textStyle }}>Sample 2</span>
+              {/* <span style={{ ...textStyle }}>Sample 2</span> */}
             </Box>
             <Box
               sx={{
@@ -157,7 +157,7 @@ const ExploreDeepali = () => {
               }}
             >
               <Image src={ImgUrl[3]} fill />
-              <span style={{ ...textStyle }}>Sample 3</span>
+              {/* <span style={{ ...textStyle }}>Sample 3</span> */}
             </Box>
             <Box
               sx={{
@@ -168,7 +168,7 @@ const ExploreDeepali = () => {
               }}
             >
               <Image src={ImgUrl[4]} fill />
-              <span style={{ ...textStyle }}>Sample 4</span>
+              {/* <span style={{ ...textStyle }}>Sample 4</span> */}
             </Box>
           </Box>
         </div>
@@ -188,12 +188,12 @@ const ExploreCarousel = () => {
   };
 
   const content = [
-    { title: "Dining", img: Constants?.ParallaxImgURL[0] },
-    { title: "Rooms", img: Constants?.ParallaxImgURL[1] },
-    { title: "Gym", img: Constants?.ParallaxImgURL[2] },
-    { title: "Pool", img: Constants?.ParallaxImgURL[3] },
-    { title: "Infinity Bar", img: Constants?.ParallaxImgURL[4] },
-    { title: "Pool Side Dining", img: Constants?.ParallaxImgURL[5] },
+    { title: "", img: Constants?.ParallaxImgURL[0] },
+    { title: "", img: Constants?.ParallaxImgURL[1] },
+    { title: "", img: Constants?.ParallaxImgURL[2] },
+    { title: "", img: Constants?.ParallaxImgURL[3] },
+    { title: "", img: Constants?.ParallaxImgURL[4] },
+    { title: "", img: Constants?.ParallaxImgURL[5] },
   ];
 
   return (
